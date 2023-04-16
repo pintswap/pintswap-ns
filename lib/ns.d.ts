@@ -1,0 +1,15 @@
+import express from "express";
+import { ethers } from "ethers";
+import PeerId from "peer-id";
+export declare function providerFromChainId(chainId: any): ethers.InfuraProvider;
+export declare const logger: any;
+export declare function walletFromEnv(): ethers.Wallet | ethers.HDNodeWallet;
+export declare function providerFromEnv(): ethers.InfuraProvider;
+export declare const PINTSWAP_DIRECTORY: string;
+export declare const PINTSWAP_PEERID_FILEPATH: string;
+export declare function loadOrCreatePeerId(): Promise<PeerId>;
+export declare function runServer(app: ReturnType<typeof express>): Promise<void>;
+export declare const PINTSWAP_REGISTRAR_FILEPATH: string;
+export declare function saveRegistrar(pintswap: any): Promise<void>;
+export declare function loadRegistrar(): Promise<Map<any, any>>;
+export declare function run(): Promise<void>;

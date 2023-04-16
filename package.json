@@ -1,0 +1,32 @@
+{
+  "name": "pintswap-daemon",
+  "version": "0.1.0",
+  "description": "PintSwap daemon process ",
+  "main": "lib/index.js",
+  "bin": {
+    "pintswap-ns": "./bin/ns.js"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": "https://github.com/pintswap/pintswap-daemon",
+  "author": "altinak",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "change-case": "^4.1.2",
+    "ethers": "^6.3.0",
+    "express": "^4.18.2",
+    "fs-extra": "^11.1.1",
+    "mkdirp": "^3.0.0",
+    "node-fetch": "2",
+    "peer-id": "^0.16.0",
+    "@pintswap/sdk": "^1.2.18",
+    "yargs": "^17.7.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "typescript": "^5.0.4"
+  }
+}
